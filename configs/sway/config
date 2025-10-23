@@ -255,4 +255,6 @@ output DP-1 resolution 1920x1080 position 1920,0
 output HDMI-A-1 resolution 1920x1080 position 0,0
 output DP-1 scale 0.9
 
+# Start polkit
+exec_always --no-startup-id lxpolkit
 
