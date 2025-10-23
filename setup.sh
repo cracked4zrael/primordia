@@ -39,6 +39,9 @@ SWAY_UTILS=(
     thunar
     thunar-archive-plugin
     thunar-volman
+    polkit-1
+    udisks2
+    gvfs
     gvfs-backends
     unzip
     pavucontrol
@@ -122,6 +125,11 @@ echo "Configuring KVM permissions..."
 sudo usermod -aG libvirt $USER
 sudo usermod -aG kvm $USER
 sudo systemctl enable --now libvirtd
+
+# -------------------------------
+# Polkit Configuration
+# -------------------------------
+sudo systemctl enable polkit
 
 # -------------------------------
 # Done
