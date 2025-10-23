@@ -31,6 +31,7 @@ SWAY_UTILS=(
     slurp
     swappy
     alacritty
+    network-manager
     xdg-desktop-portal-wlr
     autotiling
     sway-notification-center
@@ -52,6 +53,10 @@ SWAY_UTILS=(
     gawk
     cmake
     curl
+    python3
+    fzf
+    python3-pip
+    docker 
     meson
     ninja-build
     pkg-config
@@ -61,7 +66,10 @@ SWAY_UTILS=(
     mingw-w64
     git
     feh
+    fastfetch
 )
+
+# You can manually install brave-browser, zellij, zsh + starship and fuzzel
 
 FONTS=(
     fonts-jetbrains-mono
