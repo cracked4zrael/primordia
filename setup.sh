@@ -127,9 +127,11 @@ sudo usermod -aG kvm $USER
 sudo systemctl enable --now libvirtd
 
 # -------------------------------
-# Polkit Configuration
+# Polkit Setup
 # -------------------------------
 sudo systemctl enable polkit
+sudo usermod -aG plugdev $USER
+sudo usermod -aG storage $USER
 
 # -------------------------------
 # Done
